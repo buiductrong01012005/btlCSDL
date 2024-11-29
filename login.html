@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management Application</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('image/libBack.jpg') no-repeat center center/cover;
+        }
+
+        .container {
+            width: 900px;
+            height: 540px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.87);
+            width: 547px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            width: calc(50% - 10px);
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .form-container button.sign-in {
+            background-color: #4CAF50;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .form-container button.create-account {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .exit-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.2);
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .exit-button img {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Library Management Application</h1>
+    <div class="form-container">
+        <label for="username">ACCOUNT NAME</label>
+        <input type="text" id="username" placeholder="Enter Your User Name">
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" placeholder="Enter Your Password">
+        <div style="display: flex; justify-content: space-between;">
+            <button class="sign-in" onclick="onSignInClick()">Sign In</button>
+            <button class="create-account" onclick="onCreateAccClick()">Create new account</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function onSignInClick() {
+        alert('Sign In clicked!');
+    }
+
+    function onCreateAccClick() {
+        alert('Create new account clicked!');
+    }
+
+</script>
+</body>
+</html>
